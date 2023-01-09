@@ -19,8 +19,6 @@
     # Clues: Hawaiian shirt, flannel, NAVY hoodie, life coach pamphlet
     # Start location: LEARN campus - 1 - ENTER BUILDING 2 - INVESTIGATE OUTSIDE 3 - LEAVE CAMPUS (AUTOMATIC LOSE)
 
-    # 2 - INVESTIGATE : 1 - LOOK BEHIND BUSH - LIFE COACH PAMPHLET - GO BACK TO START POINT 
-                        # 2 - TALK TO NPC ELYSE - ASK IF SHES SEEN ANYTHING SUSPICIOUS, LEAD TO BUSH, LOOP BACK TO START
 
     # 1 - ENTER BUILDING (MAIN HALL): 1-7 ROOM NAMES:
         # 1 REDWOOD CLASSROOM:
@@ -37,35 +35,69 @@
         # 6 CHANNEL ISLAND CLASSROOM
         # 7 INSTRUCTORS BREAKROOM
                      
-        # Welcome to the fabulous, sunny San Diego, California! Home to the coding bootcamp, LEARN Academy.... and a blood thirsty murderer. Hotel cohort is in town to celebrate their graduation, until tradgedy strikes. Trish, one of the lead instructors at LEARN has been found unalived by what looks like from alcohol poisoning. Upon closer inspection, foul play has been suspected from someone in the cohort, or cohort team. You, the detective, have been handed an assignment to solve who murdered Trish. Solve the case, and bring the murderer to justice! 
-        # Starting location: LEARN Academy campus
+        # Welcome to the fabulous, sunny San Diego, California! Home to the coding bootcamp, LEARN Academy.... and a blood thirsty murderer. Hotel cohort is in town to celebrate their graduation, until tradgedy strikes. Trish, one of the lead instructors at LEARN has been found unalived by what looks like from alcohol poisoning. Upon closer inspection, foul play has been suspected from someone in the cohort, or cohort team. You, the detective, have been handed an assignment to solve who murdered Trish. Solve the case, and bring the murderer to justice!
+
+        # Starting location: LEARN Academy MAIN HALL
+p 'Welcome to the fabulous, sunny San Diego, California! Home to the coding bootcamp, LEARN Academy.... and a blood thirsty murderer. Hotel cohort is in town to celebrate their graduation, until tradgedy strikes. Trish, one of the lead instructors at LEARN has been found unalived by what looks like from alcohol poisoning. Upon closer inspection, foul play has been suspected from someone in the cohort, or cohort team. You, the detective, have been handed an assignment to solve who murdered Trish. Solve the case, and bring the murderer to justice!'
+
+def explore_redwood
+    p  "You are in Redwood. Do you wish to explore or exit the room enter 1 to leave or 2 to explore"
+    enter_value = gets.chomp
+        if enter_value == "1"
+            "you have left the room"
+        elsif
+        end
+end   
 
 
+def explore_yosemite
+    p  "You are in Yosemite. Do you wish to explore or exit the room enter 1 to leave or 2 to explore"
+    enter_value = gets.chomp
+        if enter_value == "1"
+            "you have left the room"
+        end
+end 
+
+
+def explore_josuatree
+    p  "You are in Joshua Tree. Do you wish to explore or exit the room enter 1 to leave or 2 to explore"
+    enter_value = gets.chomp
+        if enter_value == "1"
+            "you have left the room"
+        end
+end 
+
+
+def explore_sequoia
+    p  "You are in Sequoia. Do you wish to explore or exit the room enter 1 to leave or 2 to explore"
+    enter_value = gets.chomp
+        if enter_value == "1"
+            "you have left the room"
+        end
+end 
+
+
+def explore_instructor_breakroom
+    p  "You are in Instructor Breakroom. Do you wish to explore or exit the room enter 1 to leave or 2 to explore"
+    enter_value = gets.chomp
+        if enter_value == "1"
+            "you have left the room"
+        end
+end 
 
 def enter_rooms
-    p "You are in the main hallway. Select a number to enter a classroom to investigate: 
-    1 Redwood Classroom 
-    2 Yosemite Classroom 
-    3 Joshua Tree Classroom 
-    4 Sequoia Classroom
-    5 Kings Canyon Classroom 
-    6 Channel Island Classroom 
-    7 Instructor's Breakroom"
+    p 'You are in the main hallway. Select a number to enter a classroom to investigate: 1 Redwood Classroom, 2 Yosemite Classroom, 3 Joshua Tree Classroom, 4 Sequoia Classroom, 5 Instructor Breakroom'
     enter = gets.chomp
         if enter == '1'
-            'You are in RedWood'
+             explore_redwood
         elsif enter =='2'
-            'You are in Yosemite'
+             explore_yosemite
         elsif enter == '3'
-            'You are in Joshua Tree'
+             explore_josuatree
         elsif enter == '4'
-            'You are in Sequoia'
+             explore_sequoia
         elsif enter == '5'
-            'You are in Kings Canyon'
-        elsif enter == '6'
-            'You are in Channel Island'
-        elsif enter == '7'
-            "You are in the Instructor's breakroom"
-    end
+             explore_instructor_breakroom
+         end
 end
 p enter_rooms
