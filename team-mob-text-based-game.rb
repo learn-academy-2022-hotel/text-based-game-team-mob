@@ -24,13 +24,48 @@
 
     # 1 - ENTER BUILDING (MAIN HALL): 1-7 ROOM NAMES:
         # 1 REDWOOD CLASSROOM:
-            1 - TALK TO BORA -> SEND TO YOSEMITE(BACK TO PREV ROOM)
-            2 - OSCAR -> SEND TO BORA(1)
-            3 - MONICA -> SEND TO YOSEMITE(BACK TO PREV ROOM)   
+            # 1 - TALK TO BORA -> SEND TO YOSEMITE(BACK TO PREV ROOM)
+            # 2 - OSCAR -> SEND TO BORA(1)
+            # 3 - MONICA -> SEND TO YOSEMITE(BACK TO PREV ROOM)   
         # 2 YOSEMITE CLASSROOM
+            # 1 Christian - Wearing Navy Hoodie - 
+            # 2 Natally - SLEEPING
+            # 3 Dominique
         # 3 JOSHUA TREE CLASSROOM
         # 4 SEQUOIA CLASSROOM
         # 5 KINGS CANYON CLASSROOM
         # 6 CHANNEL ISLAND CLASSROOM
         # 7 INSTRUCTORS BREAKROOM
-                    
+                     
+        # Welcome to the fabulous, sunny San Diego, California! Home to the coding bootcamp, LEARN Academy.... and a blood thirsty murderer. Hotel cohort is in town to celebrate their graduation, until tradgedy strikes. Trish, one of the lead instructors at LEARN has been found unalived by what looks like from alcohol poisoning. Upon closer inspection, foul play has been suspected from someone in the cohort, or cohort team. You, the detective, have been handed an assignment to solve who murdered Trish. Solve the case, and bring the murderer to justice! 
+        # Starting location: LEARN Academy campus
+
+
+
+def enter_rooms
+    p "You are in the main hallway. Select a number to enter a classroom to investigate: 
+    1 Redwood Classroom 
+    2 Yosemite Classroom 
+    3 Joshua Tree Classroom 
+    4 Sequoia Classroom
+    5 Kings Canyon Classroom 
+    6 Channel Island Classroom 
+    7 Instructor's Breakroom"
+    enter = gets.chomp
+        if enter == '1'
+            'You are in RedWood'
+        elsif enter =='2'
+            'You are in Yosemite'
+        elsif enter == '3'
+            'You are in Joshua Tree'
+        elsif enter == '4'
+            'You are in Sequoia'
+        elsif enter == '5'
+            'You are in Kings Canyon'
+        elsif enter == '6'
+            'You are in Channel Island'
+        elsif enter == '7'
+            "You are in the Instructor's breakroom"
+    end
+end
+p enter_rooms
